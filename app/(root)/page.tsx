@@ -1,5 +1,5 @@
 // import { Collection } from "@/components/shared/Collection"
-// import { navLinks } from "@/constants"
+import { navLinks } from "@/constants"
 // import { getAllImages } from "@/lib/actions/image.actions"
 import Image from "next/image"
 import Link from "next/link"
@@ -17,7 +17,7 @@ const Home = ({ searchParams }: any) => {
           Unleash Your Creative Vision with Imaginify
         </h1>
         <ul className="flex-center w-full gap-20">
-          {/* {navLinks.slice(1, 5).map((link) => (
+          {navLinks.slice(1, 5).map((link) => (
             <Link
               key={link.route}
               href={link.route}
@@ -28,7 +28,7 @@ const Home = ({ searchParams }: any) => {
               </li>
               <p className="p-14-medium text-center text-white">{link.label}</p>
             </Link>
-          ))} */}
+          ))}
         </ul>
       </section>
 
